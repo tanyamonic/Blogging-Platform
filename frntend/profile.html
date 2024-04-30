@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Profile - Blogging Website</title>
+  <style>
+    /* CSS */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+      background-image: url(bg3.jpg);
+    }
+
+    header {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    .profile-info {
+      background-color: #fff;
+      padding: 20px;
+      margin: 20px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>My Profile</h1>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="blog.html">Create Post</a></li>
+        <li><a href="editor.html">Edit Profile</a></li>
+        <li><a href="profile.html">My Page</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="profile-info">
+      <h2>User Profile</h2>
+      <button id="toggleProfile">Show Profile Details</button>
+      <div class="profile-details">
+        <p><strong>Name:</strong> Tanya</p>
+        <p><strong>Email:</strong> tanya@gmail.com</p>
+        <p><strong>Location:</strong> Chennai, India</p>
+      </div>
+    </section>
+
+    <!--my posts-->
+    <section class="recent-posts">
+      <h2>Recent Posts</h2>
+      <div class="post-list">
+        <div class="post">
+          <h3>Picnic day</h3>
+          <p>On picnic day, the breeze danced through the trees as we laughed and savored the simple joys of life under the open sky.</p>
+          <img src="img4.png" alt="A beautiful landscape" width="400" height="300">
+
+        </div>
+        <div class="post">
+          <h3>New Year</h3>
+          <p>In the new year, laughter echoed as friends gathered to celebrate another year of joy, memories, and the promise of adventures yet to come.</p>
+          <img src="img6.png" alt="new year" width="400" height="300">
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 BlogNest. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // JavaScript code
+    const toggleButton = document.getElementById('toggleProfile');
+    const profileDetails = document.querySelector('.profile-details');
+
+    toggleButton.addEventListener('click', () => {
+      if (profileDetails.style.display === 'none') {
+        profileDetails.style.display = 'block';
+        toggleButton.textContent = 'Hide Profile Details';
+      } else {
+        profileDetails.style.display = 'none';
+        toggleButton.textContent = 'Show Profile Details';
+      }
+    });
+  </script>
+
+</body>
+
+</html>

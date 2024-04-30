@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Posts</title>
+<!--css link-->
+    <link rel="stylesheet" href="editor.css">
+</head>
+<body>
+    <div class="container">
+        <h1>My Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="editor.html">Editor</a></li>
+            </ul>
+        </nav>
+    </div>
+    <h1>Edit Posts</h1>
+
+    
+    <!-- Section for editing existing posts -->
+    <h2>Edit Existing Posts</h2>
+    <ul>
+        <li>
+            <form action="edit_post.php" method="post">
+                <input type="hidden" name="post_id" value="1">
+                <label for="edit_title_1">Title:</label><br>
+                <input type="text" id="edit_title_1" name="edit_title" placeholder="Sample Post Title"><br>
+                <label for="edit_content_1">Content:</label><br>
+                <textarea id="edit_content_1" name="edit_content" placeholder="Sample post content goes here."></textarea><br>
+                <div class="buttons">
+
+                    <input type="submit" value="Submit">
+                    
+                    <button type="button">Cancel</button>
+                  
+                  </div>
+                  
+            </form>
+        </li>
+        <li>
+            <!-- Another example post -->
+            
+        </li>
+    </ul>
+    <!--js link-->
+    <script src="scripts.js"></script>
+</body>
+</html>
