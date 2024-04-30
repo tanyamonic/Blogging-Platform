@@ -19,10 +19,10 @@ A few challenges i faced:
 - As all of the tech stacks were new .. i didn't know how to use them..
 - Problems during installation
 - Problems during integration
-- 
+  
 How i overcome them:
 -I started to learn the very basics of some of the languages to work in them. (React, fast API, SQL model)
 -For problems in installation i referred to YouTube tutorials and online tools to successfully install them.
-- But unfortunately, i was unable to integrate the front end and back end... i tried my best but i couldn't achieve it.
+-But unfortunately, i was unable to integrate the front end and back end... i tried my best but i couldn't achieve it.
 
 
